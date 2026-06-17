@@ -69,7 +69,7 @@ class TfLiteBuilderImpl : public TfLiteBuilder {
 
   int AddTensor(const std::string& name, TensorType type,
                 const std::vector<int32_t>& shape) override {
-    return AddTensor(name, type, shape, absl::nullopt);
+    return AddTensor(name, type, shape, std::nullopt);
   }
 
   int AddQuantizedTensor(
@@ -82,7 +82,7 @@ class TfLiteBuilderImpl : public TfLiteBuilder {
   int AddConstTensor(const std::string& name, TensorType type,
                      const std::vector<int32_t>& shape, const uint8_t* data,
                      size_t size) override {
-    return AddConstTensor(name, type, shape, data, size, absl::nullopt);
+    return AddConstTensor(name, type, shape, data, size, std::nullopt);
   }
 
   int AddQuantizedConstTensor(
