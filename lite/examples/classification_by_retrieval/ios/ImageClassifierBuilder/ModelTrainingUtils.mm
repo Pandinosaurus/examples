@@ -17,7 +17,7 @@
 #import <CoreVideo/CoreVideo.h>
 #import <UIKit/UIKit.h>
 
-#include <cstdint>
+#include "base/types.h"
 #include "absl/status/status.h"
 #include "flatbuffers/util.h"
 #import "ios/ImageClassifierBuilder/NSData+PixelBuffer.h"
